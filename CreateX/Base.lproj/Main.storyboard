@@ -101,6 +101,9 @@
                                         <state key="normal" title="     Map">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mapButtonTapped:" destination="6dx-RD-iSA" eventType="touchUpInside" id="HDX-TL-Zm2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-OF-rxT">
                                         <rect key="frame" x="25" y="609" width="85" height="38"/>
