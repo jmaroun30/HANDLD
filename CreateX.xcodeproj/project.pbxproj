@@ -15,6 +15,11 @@
 		F60604AB21A37512001C2E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60604A921A37512001C2E1D /* LaunchScreen.storyboard */; };
 		F60604B621A37512001C2E1D /* CreateXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604B521A37512001C2E1D /* CreateXTests.swift */; };
 		F60604C121A37512001C2E1D /* CreateXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604C021A37512001C2E1D /* CreateXUITests.swift */; };
+		F60604CF21A37E49001C2E1D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604CE21A37E49001C2E1D /* BaseViewController.swift */; };
+		F60604D121A37EFE001C2E1D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604D021A37EFE001C2E1D /* MenuViewController.swift */; };
+		F60604D321A38134001C2E1D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604D221A38134001C2E1D /* MapViewController.swift */; };
+		F690B15A21AB684C007CFC8A /* IncidentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690B15921AB684C007CFC8A /* IncidentsViewController.swift */; };
+		F690B15C21AB6A78007CFC8A /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690B15B21AB6A78007CFC8A /* ImportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		F60604BC21A37512001C2E1D /* CreateXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreateXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60604C021A37512001C2E1D /* CreateXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateXUITests.swift; sourceTree = "<group>"; };
 		F60604C221A37512001C2E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60604CE21A37E49001C2E1D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F60604D021A37EFE001C2E1D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F60604D221A38134001C2E1D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F690B15921AB684C007CFC8A /* IncidentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsViewController.swift; sourceTree = "<group>"; };
+		F690B15B21AB6A78007CFC8A /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,11 @@
 				F606049D21A3750F001C2E1D /* AppDelegate.swift */,
 				F606049F21A3750F001C2E1D /* ViewController.swift */,
 				F60604A121A3750F001C2E1D /* Main.storyboard */,
+				F690B15B21AB6A78007CFC8A /* ImportViewController.swift */,
+				F690B15921AB684C007CFC8A /* IncidentsViewController.swift */,
+				F60604D221A38134001C2E1D /* MapViewController.swift */,
+				F60604D021A37EFE001C2E1D /* MenuViewController.swift */,
+				F60604CE21A37E49001C2E1D /* BaseViewController.swift */,
 				F60604A721A37512001C2E1D /* Assets.xcassets */,
 				F60604A921A37512001C2E1D /* LaunchScreen.storyboard */,
 				F60604AC21A37512001C2E1D /* Info.plist */,
@@ -260,8 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F60604A021A3750F001C2E1D /* ViewController.swift in Sources */,
+				F60604D321A38134001C2E1D /* MapViewController.swift in Sources */,
+				F690B15A21AB684C007CFC8A /* IncidentsViewController.swift in Sources */,
+				F60604D121A37EFE001C2E1D /* MenuViewController.swift in Sources */,
+				F60604CF21A37E49001C2E1D /* BaseViewController.swift in Sources */,
 				F60604A621A3750F001C2E1D /* CreateX.xcdatamodeld in Sources */,
 				F606049E21A3750F001C2E1D /* AppDelegate.swift in Sources */,
+				F690B15C21AB6A78007CFC8A /* ImportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
