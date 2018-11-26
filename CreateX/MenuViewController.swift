@@ -68,6 +68,17 @@ class MenuViewController: UIViewController {
         let dvc = mainStoryboard.instantiateViewController(withIdentifier: "ImportViewController") as!  ImportViewController
         self.navigationController?.pushViewController(dvc, animated: true)
     }
+    @IBAction func aboutUsButtonTapped(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let dvc = mainStoryboard.instantiateViewController(withIdentifier: "AboutUsViewController") as!  AboutUsViewController
+        self.navigationController?.pushViewController(dvc, animated: true)
+    }
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let dvc = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as!  ViewController
+        self.navigationController?.pushViewController(dvc, animated: true)
+        
+    }
     /*
     // MARK: - Navigation
 
