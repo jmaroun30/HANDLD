@@ -11,8 +11,8 @@ import AVKit
 import AVFoundation
 
 class Violation: NSObject {
-    weak var image: UIImage!
-    weak var video: AVPlayer!
+    var image: UIImage!
+    var video: String!
     var date: String!
     var location: String!
     var time: String!
