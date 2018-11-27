@@ -20,10 +20,15 @@ class MenuViewController: UIViewController {
     var btnMenu: UIButton!
     var delegate: SlideMenuDelegate?
 
+    @IBOutlet weak var logoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        logoImageView.layer.cornerRadius = logoImageView.frame.size.width / 2
+        logoImageView.clipsToBounds = true
+        
     }
     
     

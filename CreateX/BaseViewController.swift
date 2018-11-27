@@ -59,7 +59,17 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         btnShowMenu.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         btnShowMenu.addTarget(self, action: #selector(BaseViewController.onSlideMenuButtonPressed(_:)), for: UIControl.Event.touchUpInside)
         let customBarItem = UIBarButtonItem(customView: btnShowMenu)
-        self.navigationItem.leftBarButtonItem = customBarItem;
+        let label = UITextView()
+//        label.image = UIImage(named: "handld.png")
+//        label.frame = CGRect(x: 5, y: 0, width: 25, height: 30)
+//        label.sizeToFit()
+        label.text = "HANDLD"
+        label.sizeToFit()
+        let customText = UIBarButtonItem(customView: label)
+    
+        
+        self.navigationItem.leftBarButtonItem = customBarItem
+        self.navigationItem.rightBarButtonItem = customText
     }
 
     func defaultMenuImage() -> UIImage {
@@ -81,7 +91,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         
         UIGraphicsEndImageContext()
        
-        return defaultMenuImage;
+        return defaultMenuImage
     }
     
     @objc func onSlideMenuButtonPressed(_ sender : UIButton){
@@ -99,7 +109,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
                 frameMenu.origin.x = -1 * UIScreen.main.bounds.size.width
                 viewMenuBack.frame = frameMenu
                 viewMenuBack.layoutIfNeeded()
-                viewMenuBack.backgroundColor = UIColor.clear
+                viewMenuBack.backgroundColor = UIColor.white
                 }, completion: { (finished) -> Void in
                     viewMenuBack.removeFromSuperview()
             })

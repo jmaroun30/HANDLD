@@ -52,8 +52,8 @@ class MapViewController: BaseViewController, CLLocationManagerDelegate, MKMapVie
                 
                 if var region = self?.mapView.region {
                     region.center = location.coordinate
-                    region.span.longitudeDelta /= 8.0
-                    region.span.latitudeDelta /= 8.0
+                    region.span.longitudeDelta /= 3000.0
+                    region.span.latitudeDelta /= 3000.0
                     self?.mapView.setRegion(region, animated: true)
                     self?.mapView.addAnnotation(mark)
                 }
@@ -68,8 +68,8 @@ class MapViewController: BaseViewController, CLLocationManagerDelegate, MKMapVie
                 
                 if var region = self?.mapView.region {
                     region.center = location2.coordinate
-                    region.span.longitudeDelta /= 8.0
-                    region.span.latitudeDelta /= 8.0
+                    region.span.longitudeDelta /= 3000.0
+                    region.span.latitudeDelta /= 3000.0
                     self?.mapView.setRegion(region, animated: true)
                     self?.mapView.addAnnotation(mark)
                 }
@@ -93,7 +93,7 @@ class MapViewController: BaseViewController, CLLocationManagerDelegate, MKMapVie
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last as! CLLocation
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        var region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+        var region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         region.center = mapView.userLocation.coordinate
         //mapView.setRegion(region, animated: true)
     }
