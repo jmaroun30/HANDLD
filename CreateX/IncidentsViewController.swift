@@ -28,15 +28,15 @@ class IncidentsViewController: BaseViewController, UITableViewDelegate, UITableV
         
         // Do any additional setup after loading the view.
         
-        one.image = UIImage(named: "IMG_4231.png")
-        one.video = "IMG_4146"
+        one.image = UIImage(named: "licensepic1.png")
+        one.video = "IMG_2874"
         one.date = "11/12/2018"
         one.location = "190 5th St NW, Atlanta, GA 30332"
         one.time = "1:53 PM"
     
         
-        two.image = UIImage(named: "IMG_4232.png")
-        two.video = "IMG_4233"
+        two.image = UIImage(named: "IMG_4246.jpg")
+        two.video = "IMG_4240"
         two.date = "11/14/2018"
         two.location = "801 Atlantic Drive, Atlanta, GA 30332"
         two.time = "3:26 PM"

@@ -109,7 +109,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
                 frameMenu.origin.x = -1 * UIScreen.main.bounds.size.width
                 viewMenuBack.frame = frameMenu
                 viewMenuBack.layoutIfNeeded()
-                viewMenuBack.backgroundColor = UIColor.white
+                viewMenuBack.backgroundColor = UIColor.clear
                 }, completion: { (finished) -> Void in
                     viewMenuBack.removeFromSuperview()
             })

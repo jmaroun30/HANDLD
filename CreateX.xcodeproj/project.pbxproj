@@ -18,6 +18,8 @@
 		F60604CF21A37E49001C2E1D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604CE21A37E49001C2E1D /* BaseViewController.swift */; };
 		F60604D121A37EFE001C2E1D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604D021A37EFE001C2E1D /* MenuViewController.swift */; };
 		F60604D321A38134001C2E1D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604D221A38134001C2E1D /* MapViewController.swift */; };
+		F68A257D21ADE5DE0081329B /* IMG_2874.MOV in Resources */ = {isa = PBXBuildFile; fileRef = F68A257C21ADE5DE0081329B /* IMG_2874.MOV */; };
+		F68A257F21AE03FB0081329B /* IMG_4240.MOV in Resources */ = {isa = PBXBuildFile; fileRef = F68A257E21AE03FA0081329B /* IMG_4240.MOV */; };
 		F690B15A21AB684C007CFC8A /* IncidentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690B15921AB684C007CFC8A /* IncidentsViewController.swift */; };
 		F690B15C21AB6A78007CFC8A /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690B15B21AB6A78007CFC8A /* ImportViewController.swift */; };
 		F690B15E21AB6FE4007CFC8A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690B15D21AB6FE4007CFC8A /* AboutUsViewController.swift */; };
@@ -64,6 +66,8 @@
 		F60604CE21A37E49001C2E1D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F60604D021A37EFE001C2E1D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F60604D221A38134001C2E1D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F68A257C21ADE5DE0081329B /* IMG_2874.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_2874.MOV; sourceTree = "<group>"; };
+		F68A257E21AE03FA0081329B /* IMG_4240.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_4240.MOV; sourceTree = "<group>"; };
 		F690B15921AB684C007CFC8A /* IncidentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsViewController.swift; sourceTree = "<group>"; };
 		F690B15B21AB6A78007CFC8A /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
 		F690B15D21AB6FE4007CFC8A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		F606049121A3750F001C2E1D = {
 			isa = PBXGroup;
 			children = (
+				F68A257E21AE03FA0081329B /* IMG_4240.MOV */,
+				F68A257C21ADE5DE0081329B /* IMG_2874.MOV */,
 				F690B17121ABD86E007CFC8A /* IMG_4146.MOV */,
 				F690B16F21ABD868007CFC8A /* IMG_4233.MOV */,
 				F606049C21A3750F001C2E1D /* CreateX */,
@@ -268,6 +274,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68A257D21ADE5DE0081329B /* IMG_2874.MOV in Resources */,
+				F68A257F21AE03FB0081329B /* IMG_4240.MOV in Resources */,
 				F60604AB21A37512001C2E1D /* LaunchScreen.storyboard in Resources */,
 				F60604A821A37512001C2E1D /* Assets.xcassets in Resources */,
 				F60604A321A3750F001C2E1D /* Main.storyboard in Resources */,

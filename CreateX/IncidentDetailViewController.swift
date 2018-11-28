@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 
-class IncidentDetailViewController: UIViewController {
+class IncidentDetailViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var data: Violation?
     @IBOutlet weak var imageView: UIImageView!
@@ -43,7 +43,28 @@ class IncidentDetailViewController: UIViewController {
     }
     
     
-
+    @IBAction func reportButtonTapped(_ sender: Any) {
+        let actionSheet = UIAlertController(title: "Do you wish to report this incident?", message: nil, preferredStyle: .actionSheet)
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        
+        actionSheet.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (UIAlertAction) in
+            imagePickerController.sourceType = .camera
+            self.present(imagePickerController, animated: true, completion: nil)
+            
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "No", style: .default, handler: { (UIAlertAction) in
+            self.present(imagePickerController, animated: true, completion: nil)
+            
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
