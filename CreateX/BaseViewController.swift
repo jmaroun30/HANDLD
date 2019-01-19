@@ -59,17 +59,10 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         btnShowMenu.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         btnShowMenu.addTarget(self, action: #selector(BaseViewController.onSlideMenuButtonPressed(_:)), for: UIControl.Event.touchUpInside)
         let customBarItem = UIBarButtonItem(customView: btnShowMenu)
-        let label = UITextView()
-//        label.image = UIImage(named: "handld.png")
-//        label.frame = CGRect(x: 5, y: 0, width: 25, height: 30)
-//        label.sizeToFit()
-        label.text = "HANDLD"
-        label.sizeToFit()
-        let customText = UIBarButtonItem(customView: label)
-    
-        
+
+//        self.navigationItem.backBarButtonItem?.tintColor = UIColor(red: 0xa2, green: 0xf4, blue: 0xae, alpha: 1)
+//        self.navigationItem.leftBarButtonItem?.tintColor = UIColor(red: 0xa2, green: 0xf4, blue: 0xae, alpha: 1)
         self.navigationItem.leftBarButtonItem = customBarItem
-        self.navigationItem.rightBarButtonItem = customText
     }
 
     func defaultMenuImage() -> UIImage {

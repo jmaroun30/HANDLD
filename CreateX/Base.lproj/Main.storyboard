@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background_Rach2" translatesAutoresizingMaskIntoConstraints="NO" id="DIm-R9-xqn">
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background_Rach2" translatesAutoresizingMaskIntoConstraints="NO" id="DIm-R9-xqn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -48,16 +48,17 @@
                                     <segue destination="0Tg-70-GEe" kind="show" id="QXT-Sg-w5G"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handld" translatesAutoresizingMaskIntoConstraints="NO" id="Hk5-C0-NKR">
-                                <rect key="frame" x="66" y="114" width="242" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="54l-mJ-Ata">
                                 <rect key="frame" x="66" y="263" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handldmission" translatesAutoresizingMaskIntoConstraints="NO" id="Hk5-C0-NKR">
+                                <rect key="frame" x="0.0" y="80" width="375" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -261,7 +262,7 @@
                                             <action selector="mapButtonTapped:" destination="6dx-RD-iSA" eventType="touchUpInside" id="HDX-TL-Zm2"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo3" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-7g-PLh">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ctInitials" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-7g-PLh">
                                         <rect key="frame" x="20" y="25" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -298,7 +299,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20637210638736506" green="0.93684574380466323" blue="0.45435847590449135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.66812771558761597" green="0.89394599199295044" blue="0.69975751638412476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -403,7 +404,7 @@
     </scenes>
     <resources>
         <image name="Background_Rach2" width="486.72000122070312" height="612"/>
-        <image name="handld" width="326" height="75"/>
-        <image name="logo3" width="221" height="236"/>
+        <image name="ctInitials" width="144" height="144"/>
+        <image name="handldmission" width="198.72000122070312" height="108"/>
     </resources>
 </document>
