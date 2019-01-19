@@ -7,20 +7,45 @@
 //
 
 import UIKit
+import Alamofire
+import AVKit
 
 class ImportViewController: BaseViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet weak var button: UIButton!
+	override func viewDidLoad() {
         super.viewDidLoad()
         addSlideMenuButton()
 
         // Do any additional setup after loading the view.
     }
-    
 	
 	
-	func importIncidents() {
+	@IBAction func onImportTappd(_ sender: Any) {
+		importIncidents(completion: {
+			self.button.backgroundColor = UIColor.black
+		})
+	}
+	
+	
+	
+	func importIncidents(completion: @escaping () -> ()) {
+			let httpEndpoint: String = "http://localhost:8000/data"
 		
+				Alamofire.request(httpEndpoint, method: .get).responseString { response in
+					
+					if (response.result.isSuccess) {
+						do {
+							print("upload done")
+							print("Data:" , response.result.value)
+							completion()
+						} catch let parsingError {
+							print("Error: ", parsingError)
+						}
+					} else {
+						print("request error: ", response.error)
+					}
+		}
 	}
     /*
     // MARK: - Navigation

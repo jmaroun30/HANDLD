@@ -360,9 +360,22 @@
                     <view key="view" contentMode="scaleToFill" id="og1-r1-EV0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atw-gz-1uT">
+                                <rect key="frame" x="164" y="268" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Import"/>
+                                <connections>
+                                    <action selector="onImportTappd:" destination="XQI-R9-i15" eventType="touchUpInside" id="Wca-4P-wUd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AmW-k5-P18"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="atw-gz-1uT" id="giz-GV-vGK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJb-bN-KFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
