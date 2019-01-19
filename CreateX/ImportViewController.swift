@@ -17,7 +17,11 @@ class ImportViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
-
+	
+	
+	func importIncidents() {
+		
+	}
     /*
     // MARK: - Navigation
 
