@@ -362,24 +362,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atw-gz-1uT">
-                                <rect key="frame" x="164" y="268" width="46" height="30"/>
+                                <rect key="frame" x="164" y="94" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Import"/>
                                 <connections>
                                     <action selector="onImportTappd:" destination="XQI-R9-i15" eventType="touchUpInside" id="Wca-4P-wUd"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WA7-A6-6ll">
+                                <rect key="frame" x="112" y="143" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AmW-k5-P18"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="atw-gz-1uT" id="giz-GV-vGK"/>
+                        <outlet property="progressView" destination="WA7-A6-6ll" id="BFy-fr-7Wd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJb-bN-KFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3972" y="-646"/>
+            <point key="canvasLocation" x="3972" y="-646.55172413793105"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="mKU-ST-KH8">
@@ -413,6 +418,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6k-iC-gBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="984.79999999999995" y="98.50074962518741"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rFG-YA-pMZ">
+            <objects>
+                <viewController id="8DV-xA-4DQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ubh-dj-idE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4O-4P-2N9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

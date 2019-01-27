@@ -20,6 +20,7 @@ class ImportViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
 	
+	@IBOutlet weak var progressView: UIProgressView!
 	
 	@IBAction func onImportTappd(_ sender: Any) {
 		importIncidents(completion: {
@@ -29,23 +30,40 @@ class ImportViewController: BaseViewController {
 	
 	
 	
+	
+	
 	func importIncidents(completion: @escaping () -> ()) {
-			let httpEndpoint: String = "http://localhost:8000/data"
-		
-				Alamofire.request(httpEndpoint, method: .get).responseString { response in
-					
-					if (response.result.isSuccess) {
-						do {
-							print("upload done")
-							print("Data:" , response.result.value)
-							completion()
-						} catch let parsingError {
-							print("Error: ", parsingError)
-						}
-					} else {
-						print("request error: ", response.error)
-					}
+			let httpEndpoint: String = "http://localhost:8000/download"
+			let playerController = AVPlayerViewController()
+			self.progressView.progress = 0.0
+		Alamofire.request(httpEndpoint).downloadProgress(closure : { (progress) in
+			print(progress.fractionCompleted)
+			self.progressView.progress = Float(progress.fractionCompleted)
+		}).responseData{ (response) in
+			print(response)
+			print(response.result.value!)
+			print(response.result.description)
+			if let data = response.result.value {
+				
+				let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+				let videoURL = documentsURL.appendingPathComponent("video.mov")
+				do {
+					try data.write(to: videoURL)
+				} catch {
+					print("Something went wrong!")
+				}
+				print(videoURL)
+				let player = AVPlayer(url: videoURL as URL)
+				playerController.player = player
+				self.addChild(playerController)
+				self.view.addSubview(playerController.view)
+				playerController.view.frame = self.view.frame
+				player.play()
+				
+			}
 		}
+	}
+		
 	}
     /*
     // MARK: - Navigation
@@ -56,5 +74,3 @@ class ImportViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}

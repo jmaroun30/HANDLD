@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 struct Incident {
     let image: UIImage?
@@ -27,13 +29,37 @@ class IncidentsViewController: BaseViewController, UITableViewDelegate, UITableV
         addSlideMenuButton()
         
         // Do any additional setup after loading the view.
-        
+		
+		//loop though all the video incidences
+//		let fileManager = FileManager.default
+//		let enumerator:FileManager.DirectoryEnumerator = fileManager.enumerator(atPath: "file:///Users/JamesLowe/Library/Developer/CoreSimulator/Devices/178E72DF-3DC6-4B8D-B9B6-B6309F886182/data/Containers/Data/Application/0006F9E5-D3D1-4129-BF05-2456ACA10639/Documents/")!
+
+	//	while let element = enumerator.nextObject() as? String {
+	//		if element.hasSuffix("mov") { // checks the extension
+				
+				
+				//let imageFrame : UIImage = try! videoPreviewUIImage(moviePath:  element.asURL())!
+				//one.image = imageFrame//UIImage(named: "licensepic1.png")
+			//	one.video = "IMG_2874"
+			//	one.date = "11/12/2018"
+			//	one.location = "190 5th St NW, Atlanta, GA 30332"
+			//	one.time = "1:53 PM"
+				
+
+				
+				
+	//		}
+	//	}
+		
+//		let imageFrame : UIImage = videoPreviewUIImage(moviePath: URL(string: "file:///Users/JamesLowe/Library/Developer/CoreSimulator/Devices/178E72DF-3DC6-4B8D-B9B6-B6309F886182/data/Containers/Data/Application/0006F9E5-D3D1-4129-BF05-2456ACA10639/Documents/video.mov")!)!
+
+		
         one.image = UIImage(named: "licensepic1.png")
         one.video = "IMG_2874"
         one.date = "11/12/2018"
         one.location = "190 5th St NW, Atlanta, GA 30332"
         one.time = "1:53 PM"
-    
+		
         
         two.image = UIImage(named: "IMG_4246.jpg")
         two.video = "IMG_4240"
@@ -52,6 +78,18 @@ class IncidentsViewController: BaseViewController, UITableViewDelegate, UITableV
         
         
     }
+	
+	func videoPreviewUIImage(moviePath: URL) -> UIImage? {
+		let asset = AVURLAsset(url: moviePath)
+		let generator = AVAssetImageGenerator(asset: asset)
+		generator.appliesPreferredTrackTransform = true
+		let timestamp = CMTime(seconds: 2, preferredTimescale: 60)
+		if let imageRef = try? generator.copyCGImage(at: timestamp, actualTime: nil) {
+			return UIImage(cgImage: imageRef)
+		} else {
+			return nil
+		}
+	}
     
     func tableView(_ incidentsTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
