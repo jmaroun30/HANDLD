@@ -2,8 +2,8 @@
 //  ImportViewController.swift
 //  CreateX
 //
-//  Created by Chris Truong on 11/25/18.
-//  Copyright © 2018 Chris Truong. All rights reserved.
+//  Created by James Lowe on 11/25/18.
+//  Copyright © 2018 James Lowe. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,8 @@ import Alamofire
 import AVKit
 
 class ImportViewController: BaseViewController {
-
+	
+	var db: OpaquePointer?
 	@IBOutlet weak var button: UIButton!
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +31,6 @@ class ImportViewController: BaseViewController {
 	
 	
 	
-	
-	
 	func importIncidents(completion: @escaping () -> ()) {
 			let httpEndpoint: String = "http://localhost:8000/download"
 			let playerController = AVPlayerViewController()
@@ -47,18 +46,28 @@ class ImportViewController: BaseViewController {
 				
 				let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 				let videoURL = documentsURL.appendingPathComponent("video.mov")
+				//let videoURL:URL = URL(string: "data/video.mov")!
 				do {
 					try data.write(to: videoURL)
 				} catch {
 					print("Something went wrong!")
 				}
 				print(videoURL)
-				let player = AVPlayer(url: videoURL as URL)
-				playerController.player = player
-				self.addChild(playerController)
-				self.view.addSubview(playerController.view)
-				playerController.view.frame = self.view.frame
-				player.play()
+				//DbManager.saveToDb();
+				
+				var violation: Violation = Violation()
+				violation.date = "date"
+				violation.location = "location"
+				violation.time = "time"
+				violation.videoURL = "videoURL"
+				DbManager.saveToDb(violation: violation)
+				
+				//let player = AVPlayer(url: videoURL as URL)
+				//playerController.player = player
+				//self.addChild(playerController)
+				//self.view.addSubview(playerController.view)
+				//playerController.view.frame = self.view.frame
+				//player.play()
 				
 			}
 		}

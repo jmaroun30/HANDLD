@@ -54,15 +54,15 @@ class IncidentsViewController: BaseViewController, UITableViewDelegate, UITableV
 //		let imageFrame : UIImage = videoPreviewUIImage(moviePath: URL(string: "file:///Users/JamesLowe/Library/Developer/CoreSimulator/Devices/178E72DF-3DC6-4B8D-B9B6-B6309F886182/data/Containers/Data/Application/0006F9E5-D3D1-4129-BF05-2456ACA10639/Documents/video.mov")!)!
 
 		
-        one.image = UIImage(named: "licensepic1.png")
-        one.video = "IMG_2874"
+        one.KeyFrameimage = UIImage(named: "licensepic1.png")
+       // one.videoURL = "IMG_2874"
         one.date = "11/12/2018"
         one.location = "190 5th St NW, Atlanta, GA 30332"
         one.time = "1:53 PM"
 		
         
-        two.image = UIImage(named: "IMG_4246.jpg")
-        two.video = "IMG_4240"
+        two.KeyFrameimage = UIImage(named: "IMG_4246.jpg")
+        //two.video = "IMG_4240"
         two.date = "11/14/2018"
         two.location = "801 Atlantic Drive, Atlanta, GA 30332"
         two.time = "3:26 PM"
@@ -97,7 +97,7 @@ class IncidentsViewController: BaseViewController, UITableViewDelegate, UITableV
     
     func tableView(_ incidentsTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "custom") as! IncidentsTableViewCell
-        cell.mainImage = data[indexPath.row].image
+        cell.mainImage = data[indexPath.row].KeyFrameimage
         cell.message = data[indexPath.row].date + "\n" + data[indexPath.row].time
             + "\n" + data[indexPath.row].location
         cell.layoutSubviews()

@@ -19,7 +19,7 @@ class IncidentDetailViewController: UIViewController, UIImagePickerControllerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = data?.image
+        imageView.image = data?.KeyFrameimage
         dateTextField.text = data?.date
         timeTextField.text = data?.time
         locationTextField.text = data?.location
@@ -29,7 +29,7 @@ class IncidentDetailViewController: UIViewController, UIImagePickerControllerDel
     }
     
     @IBAction func videoButtonTapped(_ sender: Any) {
-        if let path = Bundle.main.path(forResource: data?.video, ofType: "MOV") {
+        if let path = Bundle.main.path(forResource: data?.videoURL, ofType: "MOV") {
             let video = AVPlayer(url: URL(fileURLWithPath: path))
             let videoPlayer = AVPlayerViewController()
             videoPlayer.player = video
