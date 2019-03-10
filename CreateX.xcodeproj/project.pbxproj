@@ -23,6 +23,8 @@
 		F60604CF21A37E49001C2E1D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604CE21A37E49001C2E1D /* BaseViewController.swift */; };
 		F60604D121A37EFE001C2E1D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604D021A37EFE001C2E1D /* MenuViewController.swift */; };
 		F60604D321A38134001C2E1D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60604D221A38134001C2E1D /* MapViewController.swift */; };
+		F6526AB52235B5050087B913 /* iOSgif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6526AB42235B5050087B913 /* iOSgif.swift */; };
+		F6526AB72235BA9E0087B913 /* approach.gif in Resources */ = {isa = PBXBuildFile; fileRef = F6526AB62235BA9E0087B913 /* approach.gif */; };
 		F68A257D21ADE5DE0081329B /* IMG_2874.MOV in Resources */ = {isa = PBXBuildFile; fileRef = F68A257C21ADE5DE0081329B /* IMG_2874.MOV */; };
 		F68A257F21AE03FB0081329B /* IMG_4240.MOV in Resources */ = {isa = PBXBuildFile; fileRef = F68A257E21AE03FA0081329B /* IMG_4240.MOV */; };
 		F690B15A21AB684C007CFC8A /* IncidentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690B15921AB684C007CFC8A /* IncidentsViewController.swift */; };
@@ -83,6 +85,8 @@
 		F60604CE21A37E49001C2E1D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F60604D021A37EFE001C2E1D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F60604D221A38134001C2E1D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F6526AB42235B5050087B913 /* iOSgif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSgif.swift; sourceTree = "<group>"; };
+		F6526AB62235BA9E0087B913 /* approach.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = approach.gif; sourceTree = "<group>"; };
 		F68A257C21ADE5DE0081329B /* IMG_2874.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_2874.MOV; sourceTree = "<group>"; };
 		F68A257E21AE03FA0081329B /* IMG_4240.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_4240.MOV; sourceTree = "<group>"; };
 		F690B15921AB684C007CFC8A /* IncidentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			children = (
 				F68A257E21AE03FA0081329B /* IMG_4240.MOV */,
 				F68A257C21ADE5DE0081329B /* IMG_2874.MOV */,
+				F6526AB62235BA9E0087B913 /* approach.gif */,
 				F690B17121ABD86E007CFC8A /* IMG_4146.MOV */,
 				F690B16F21ABD868007CFC8A /* IMG_4233.MOV */,
 				F606049C21A3750F001C2E1D /* CreateX */,
@@ -186,6 +191,7 @@
 				F690B15D21AB6FE4007CFC8A /* AboutUsViewController.swift */,
 				F690B15B21AB6A78007CFC8A /* ImportViewController.swift */,
 				F690B15921AB684C007CFC8A /* IncidentsViewController.swift */,
+				F6526AB42235B5050087B913 /* iOSgif.swift */,
 				F690B16521AB9E53007CFC8A /* IncidentsTableViewCell.swift */,
 				F690B16921ABC628007CFC8A /* IncidentDetailViewController.swift */,
 				F60604D221A38134001C2E1D /* MapViewController.swift */,
@@ -334,6 +340,7 @@
 				F60604A821A37512001C2E1D /* Assets.xcassets in Resources */,
 				F60604A321A3750F001C2E1D /* Main.storyboard in Resources */,
 				F690B17221ABD86E007CFC8A /* IMG_4146.MOV in Resources */,
+				F6526AB72235BA9E0087B913 /* approach.gif in Resources */,
 				F690B17021ABD869007CFC8A /* IMG_4233.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +464,7 @@
 				F60604D121A37EFE001C2E1D /* MenuViewController.swift in Sources */,
 				F60604CF21A37E49001C2E1D /* BaseViewController.swift in Sources */,
 				F60604A621A3750F001C2E1D /* CreateX.xcdatamodeld in Sources */,
+				F6526AB52235B5050087B913 /* iOSgif.swift in Sources */,
 				3B32D5B421FF966800485D9D /* DbManager.swift in Sources */,
 				F690B16621AB9E53007CFC8A /* IncidentsTableViewCell.swift in Sources */,
 				F690B16021AB77B0007CFC8A /* Violation.swift in Sources */,

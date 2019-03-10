@@ -13,12 +13,19 @@ class IncidentDetailViewController: UIViewController, UIImagePickerControllerDel
     
     var data: Violation?
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var gifView: UIImageView!
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let gif = UIImage.gifImageWithName("approach")
+        gifView.image = gif
+        //gifView.frame = CGRect(x: 20.0, y: 50.0, width: self.view.frame.size.width - 40, height: 150.0)
+        //view.addSubview(gifView)
+        
         imageView.image = data?.KeyFrameimage
         dateTextField.text = data?.date
         timeTextField.text = data?.time
@@ -49,9 +56,13 @@ class IncidentDetailViewController: UIViewController, UIImagePickerControllerDel
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         
+        let alert = UIAlertController(title: "HANDLD", message: "Your incident has been successfully reported.", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        
         actionSheet.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (UIAlertAction) in
             imagePickerController.sourceType = .camera
-            self.present(imagePickerController, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
             
         }))
         
