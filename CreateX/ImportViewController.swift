@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import AVKit
+import Firebase
 
 class ImportViewController: BaseViewController {
 	

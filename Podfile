@@ -7,7 +7,9 @@ target 'CreateX' do
 
   # Pods for CreateX
 pod 'Alamofire', '~> 4.7'
-
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 
   target 'CreateXTests' do
     inherit! :search_paths

@@ -11,6 +11,9 @@
 		3B32D5B421FF966800485D9D /* DbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B32D5B321FF966800485D9D /* DbManager.swift */; };
 		422A4C99D804C4BA43D8F787 /* Pods_CreateXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3C6CF1A2727986E0140136 /* Pods_CreateXUITests.framework */; };
 		64E137D17ACE568F7776DEF5 /* Pods_CreateX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350B372E620BD0C4451C9193 /* Pods_CreateX.framework */; };
+		B7CB2CDB2263D0B40091B5F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CB2CDA2263D0B30091B5F7 /* GoogleService-Info.plist */; };
+		B7CB2CDC2263D0B40091B5F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CB2CDA2263D0B30091B5F7 /* GoogleService-Info.plist */; };
+		B7CB2CDD2263D0B40091B5F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7CB2CDA2263D0B30091B5F7 /* GoogleService-Info.plist */; };
 		DEC093A5FC4C9712CFC5D67F /* Pods_CreateXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7236C3C5BD9CBF0196E357E /* Pods_CreateXTests.framework */; };
 		F606049E21A3750F001C2E1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606049D21A3750F001C2E1D /* AppDelegate.swift */; };
 		F60604A021A3750F001C2E1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606049F21A3750F001C2E1D /* ViewController.swift */; };
@@ -64,6 +67,7 @@
 		53D66AD17F60AA3DF0FCFF1E /* Pods-CreateXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreateXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreateXTests/Pods-CreateXTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BF1A352E00F905F26DE1F53 /* Pods-CreateXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreateXUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreateXUITests/Pods-CreateXUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6F3C6CF1A2727986E0140136 /* Pods_CreateXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreateXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CB2CDA2263D0B30091B5F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7236C3C5BD9CBF0196E357E /* Pods_CreateXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreateXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E632C1A14A52EE57355379 /* Pods-CreateX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreateX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreateX/Pods-CreateX.debug.xcconfig"; sourceTree = "<group>"; };
 		D44C05F86BF1CEB30B792367 /* Pods-CreateX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreateX.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreateX/Pods-CreateX.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				F60604A721A37512001C2E1D /* Assets.xcassets */,
 				F60604A921A37512001C2E1D /* LaunchScreen.storyboard */,
 				F60604AC21A37512001C2E1D /* Info.plist */,
+				B7CB2CDA2263D0B30091B5F7 /* GoogleService-Info.plist */,
 				F60604A421A3750F001C2E1D /* CreateX.xcdatamodeld */,
 				3B32D5B321FF966800485D9D /* DbManager.swift */,
 				3B32D5B521FF975F00485D9D /* CreateX-Bridging-Header.h */,
@@ -336,6 +341,7 @@
 			files = (
 				F68A257D21ADE5DE0081329B /* IMG_2874.MOV in Resources */,
 				F68A257F21AE03FB0081329B /* IMG_4240.MOV in Resources */,
+				B7CB2CDB2263D0B40091B5F7 /* GoogleService-Info.plist in Resources */,
 				F60604AB21A37512001C2E1D /* LaunchScreen.storyboard in Resources */,
 				F60604A821A37512001C2E1D /* Assets.xcassets in Resources */,
 				F60604A321A3750F001C2E1D /* Main.storyboard in Resources */,
@@ -349,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7CB2CDC2263D0B40091B5F7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7CB2CDD2263D0B40091B5F7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,18 +422,26 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CreateX/Pods-CreateX-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CreateX/Pods-CreateX-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CreateX/Pods-CreateX-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CreateX/Pods-CreateX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED37AAA27DC23DA0145DAB6F /* [CP] Check Pods Manifest.lock */ = {
