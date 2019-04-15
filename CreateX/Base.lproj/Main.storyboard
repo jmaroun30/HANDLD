@@ -46,7 +46,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0Tg-70-GEe" kind="show" id="QXT-Sg-w5G"/>
+                                    <action selector="navigationSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dc2-Ia-cpo"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="54l-mJ-Ata">
@@ -60,12 +60,23 @@
                                 <rect key="frame" x="0.0" y="80" width="375" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmn-mn-5yb">
+                                <rect key="frame" x="163" y="499" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="loginFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1W4-fY-fEs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="DIm-R9-xqn" id="tuy-zg-Vsq"/>
+                        <outlet property="emailField" destination="54l-mJ-Ata" id="odG-si-kgU"/>
+                        <outlet property="passField" destination="tCN-Q2-r9T" id="0DB-hm-iZi"/>
+                        <segue destination="0Tg-70-GEe" kind="show" identifier="NavSegue" id="E7d-iq-tJU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
