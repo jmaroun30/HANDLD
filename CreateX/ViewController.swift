@@ -23,6 +23,25 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    @IBAction func signupFunc(_ sender: Any) {
+        if let email = emailField.text {
+            if let pass = passField.text {
+                if email == "" || pass == "" {
+                    self.displayAlert(title: "Missing Information", message: "You must provide an email and password.")
+                } else {
+                    Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
+                        if error != nil {
+                            self.displayAlert(title: "Error", message: error!.localizedDescription)
+                        } else {
+                            self.performSegue(withIdentifier: "NavSegue", sender: self)
+                            print("Success!")
+                        }
+                    })
+                }
+            }
+        }
+    }
+    
     @IBAction func loginFunc(_ sender: Any) {
         if let email = emailField.text {
             if let pass = passField.text {
@@ -43,25 +62,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func loginSegue(_ sender: Any) {
-        if let email = emailField.text {
-            if let pass = passField.text {
-                if email == "" || pass == "" {
-                    self.displayAlert(title: "Missing Information", message: "You must provide an email and password.")
-                } else {
-                    Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
-                        if error != nil {
-                            self.displayAlert(title: "Error", message: error!.localizedDescription)
-                        } else {
-                            self.performSegue(withIdentifier: "NavSegue", sender: self)
-                            print("Success!")
-                        }
-                    })
-                }
-            }
-        }
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
